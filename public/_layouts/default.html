@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jekyll Example - {{ page.title }}</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-200">
+	<nav>
+		<ul class="flex justify-center items-center bg-blue-600">
+			<li>
+				<a class="block px-4 py-1 text-2xl text-white text-center hover:bg-white hover:text-black" href="/">
+					Home
+				</a>
+			</li>
+			<li>
+				<a class="block px-4 py-1 text-2xl text-white text-center hover:bg-white hover:text-black" href="/contact">
+					Contact
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="max-w-2xl mx-auto mt-3 bg-white shadow-md rounded py-4 px-7">
+		{{ content }}
+	</div>
+</body>
+</html>

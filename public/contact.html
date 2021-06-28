@@ -1,0 +1,19 @@
+---
+layout: default
+title: Contact
+permalink: /contact
+---
+<ul class="flex flex-col gap-8 ">
+{%- for person in site.data.people -%}
+<li>
+	<div class="flex gap-4">
+		<img class="rounded object-contain" width="200px" height="200px" src="static/images/{{ person.id }}.jpg">
+		<div>
+			<h1 class="font-medium">{{ person.first_name}} {{ person.last_name }}</h1>
+			<a class="underline text-gray-600" href="mailto:{{ person.email }}">{{ person.email }}</a>
+			<p class="mt-2">{{ person.cover }}</p>
+		</div>
+	</div>
+</li>
+{%- endfor -%}
+</ul>
